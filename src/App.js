@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import Employee from "./components/Employee";
 import { useState } from "react";
 
@@ -6,7 +6,7 @@ function App() {
   const [role, setRole] = useState("dev");
   const showEmployees = true;
   return (
-    <div className="App">
+    <div className="App ">
       {showEmployees ? (
         <>
           <input
@@ -16,9 +16,64 @@ function App() {
               setRole(e.target.value);
             }}
           />
-          <Employee name=" femi" role="intern" />
-          <Employee name=" joa" role={role} />
-          <Employee name=" lase" />
+          <div className="flex flex-wrap justify-center">
+            <Employee
+              name=" femi"
+              role="intern"
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" joa"
+              role={role}
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" lase"
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" femi"
+              role="intern"
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" joa"
+              role={role}
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" lase"
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" femi"
+              role="intern"
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" joa"
+              role={role}
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" lase"
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" femi"
+              role="intern"
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" joa"
+              role={role}
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+            <Employee
+              name=" lase"
+              img="https://images.pexels.com/photos/29852895/pexels-photo-29852895/free-photo-of-professional-corporate-headshot-of-smiling-woman.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+          </div>
         </>
       ) : (
         <p> You dont have persmission to see the Employees</p>
